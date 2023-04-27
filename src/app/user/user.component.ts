@@ -1,4 +1,4 @@
-import { Component,} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,5 +6,8 @@ import { Component,} from '@angular/core';
   styleUrls: ['./user.component.scss'],
 })
 export class UserComponent {
-  
+  @Input() name = '';
+  @Input() status = '';
+  @Input() url = '';
+  isOnline = false;
 }
